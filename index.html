@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Passos para Seus Alunos Continuarem | GAME-ON®</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Meta tags -->
+    <meta property="og:title" content="8 Passos para Seus Alunos Continuarem | GAME-ON®">
+    <meta property="og:description" content="Descubra como criar uma jornada que faz o aluno ficar até o final.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDZHV0SXKJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SDZHV0SXKJ');
+    </script>
+    
+    <!-- Meta Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '820387444076157');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=820387444076157&ev=PageView&noscript=1"/></noscript>
+    
+    <style>
+        :root {
+            --azul-petroleo: #223C50;
+            --azul-escuro: #1a2f3d;
+            --areia: #E6DFD6;
+            --areia-clara: #F5F2ED;
+            --cobre: #B87333;
+            --cobre-hover: #a06429;
+            --verde-oliva: #5F7E4B;
+            --off-white: #FAF9F6;
+            --azul-claro: #5F7E95;
+            --cinza: #7A7A7A;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Source Sans 3', sans-serif; background: var(--off-white); color: var(--azul-petroleo); line-height: 1.6; overflow-x: hidden; }
+
+        /* ===== HERO SECTION ===== */
+        .hero { min-height: 100vh; background: var(--azul-petroleo); position: relative; display: flex; align-items: center; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 80%; height: 200%; background: radial-gradient(ellipse at center, rgba(184, 115, 51, 0.08) 0%, transparent 70%); pointer-events: none; }
+        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--cobre), transparent); }
+        .hero-container { max-width: 1100px; margin: 0 auto; padding: 60px 24px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+        .hero-content { animation: fadeInUp 0.8s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .hero-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--cobre); margin-bottom: 20px; padding: 8px 16px; border: 1px solid rgba(184, 115, 51, 0.3); border-radius: 2px; }
+        .hero-headline { font-family: 'Playfair Display', serif; font-size: clamp(32px, 5vw, 48px); font-weight: 400; color: white; line-height: 1.2; margin-bottom: 24px; }
+        .hero-headline em { color: var(--cobre); font-style: italic; }
+        .hero-subheadline { font-size: 18px; color: rgba(255, 255, 255, 0.75); margin-bottom: 32px; font-weight: 300; max-width: 480px; }
+        .hero-promise { background: rgba(184, 115, 51, 0.1); border-left: 3px solid var(--cobre); padding: 20px 24px; margin-bottom: 32px; border-radius: 0 8px 8px 0; }
+        .hero-promise p { font-size: 15px; color: rgba(255, 255, 255, 0.9); font-style: italic; }
+        .hero-promise strong { color: var(--cobre); font-weight: 600; font-style: normal; }
+        .hero-cta { display: inline-flex; align-items: center; gap: 12px; background: var(--cobre); color: white; font-size: 16px; font-weight: 600; padding: 18px 36px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(184, 115, 51, 0.3); }
+        .hero-cta:hover { background: var(--cobre-hover); transform: translateY(-2px); box-shadow: 0 6px 30px rgba(184, 115, 51, 0.4); }
+        .hero-cta svg { transition: transform 0.3s ease; }
+        .hero-cta:hover svg { transform: translateX(4px); }
+        .hero-visual { position: relative; animation: fadeInUp 0.8s ease-out 0.2s both; }
+        .ebook-mockup { position: relative; transform: perspective(1000px) rotateY(-8deg) rotateX(2deg); transition: transform 0.5s ease; }
+        .ebook-mockup:hover { transform: perspective(1000px) rotateY(-4deg) rotateX(1deg); }
+        .ebook-cover { width: 100%; max-width: 320px; border-radius: 8px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1); }
+        .ebook-badge { position: absolute; top: -15px; right: -15px; background: var(--verde-oliva); color: white; font-size: 11px; font-weight: 600; padding: 12px 16px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(95, 126, 75, 0.4); }
+
+        /* ===== PROBLEMA SECTION ===== */
+        .problema { background: var(--areia); padding: 100px 24px; position: relative; }
+        .problema::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: var(--cobre); }
+        .problema-container { max-width: 800px; margin: 0 auto; text-align: center; }
+        .section-tag { display: block; font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--cobre); margin-bottom: 16px; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 38px); font-weight: 400; color: var(--azul-petroleo); margin-bottom: 32px; line-height: 1.3; }
+        .problema-text { font-size: 17px; color: var(--azul-petroleo); opacity: 0.85; margin-bottom: 24px; line-height: 1.8; }
+        .problema-highlight { background: var(--azul-petroleo); color: white; padding: 32px 40px; border-radius: 12px; margin-top: 40px; text-align: left; }
+        .problema-highlight p { font-size: 16px; line-height: 1.7; margin-bottom: 16px; }
+        .problema-highlight p:last-child { margin-bottom: 0; }
+        .problema-highlight strong { color: var(--cobre); }
+
+        /* ===== PASSOS SECTION ===== */
+        .passos { background: var(--off-white); padding: 100px 24px; }
+        .passos-container { max-width: 1000px; margin: 0 auto; }
+        .passos-header { text-align: center; margin-bottom: 60px; }
+        .passos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .passo-card { background: white; border-radius: 12px; padding: 28px 32px; display: flex; gap: 20px; align-items: flex-start; transition: all 0.3s ease; border: 1px solid rgba(34, 60, 80, 0.08); }
+        .passo-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(34, 60, 80, 0.1); border-color: var(--cobre); }
+        .passo-numero { width: 44px; height: 44px; background: var(--verde-oliva); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; flex-shrink: 0; }
+        .passo-content h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: var(--azul-petroleo); margin-bottom: 6px; }
+        .passo-content p { font-size: 14px; color: var(--azul-petroleo); opacity: 0.7; }
+
+        /* ===== TRANSFORMAÇÃO SECTION ===== */
+        .transformacao { background: var(--azul-petroleo); padding: 100px 24px; position: relative; }
+        .transformacao-container { max-width: 900px; margin: 0 auto; }
+        .transformacao-header { text-align: center; margin-bottom: 50px; }
+        .transformacao-header .section-title { color: white; }
+        .transformacao-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 40px; align-items: center; }
+        .transformacao-col { text-align: center; }
+        .transformacao-label { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); margin-bottom: 20px; }
+        .transformacao-items { display: flex; flex-direction: column; gap: 16px; }
+        .transformacao-item { background: rgba(255, 255, 255, 0.05); padding: 16px 20px; border-radius: 8px; font-size: 14px; color: rgba(255, 255, 255, 0.7); }
+        .transformacao-item.destaque { background: rgba(184, 115, 51, 0.15); color: white; border: 1px solid rgba(184, 115, 51, 0.3); }
+        .transformacao-seta { font-size: 32px; color: var(--cobre); }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section { background: var(--areia); padding: 100px 24px; text-align: center; }
+        .cta-container { max-width: 700px; margin: 0 auto; }
+        .cta-section .section-title { margin-bottom: 20px; }
+        .cta-subtitle { font-size: 17px; color: var(--azul-petroleo); opacity: 0.8; margin-bottom: 40px; }
+        .cta-box { background: white; border-radius: 16px; padding: 48px 56px; box-shadow: 0 20px 60px rgba(34, 60, 80, 0.1); }
+
+        /* ===== FORMULÁRIO PADRONIZADO ===== */
+        .form-label { display: block; font-size: 15px; font-weight: 600; color: var(--azul-petroleo); margin-bottom: 16px; text-align: center; }
+        .radio-group { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; max-width: 100%; }
+        .radio-option { display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: var(--off-white); border: 2px solid transparent; border-radius: 10px; cursor: pointer; transition: all 0.2s ease; text-align: left; }
+        .radio-option:hover { border-color: var(--azul-claro); }
+        .radio-option.selected { border-color: var(--cobre); background: rgba(184, 115, 51, 0.05); }
+        .radio-option input[type="radio"] { width: 20px; height: 20px; accent-color: var(--cobre); cursor: pointer; flex-shrink: 0; }
+        .radio-option span { font-size: 15px; color: var(--azul-petroleo); }
+        .cta-form { display: flex; flex-direction: column; gap: 16px; max-width: 100%; margin: 0 auto; }
+        .cta-input { width: 100%; padding: 16px 20px; font-size: 16px; font-family: inherit; border: 2px solid rgba(34, 60, 80, 0.1); border-radius: 8px; background: var(--off-white); color: var(--azul-petroleo); transition: all 0.3s ease; }
+        .cta-input:focus { outline: none; border-color: var(--cobre); background: white; }
+        .cta-input::placeholder { color: rgba(34, 60, 80, 0.4); }
+        .cta-button { width: 100%; padding: 18px 32px; font-size: 16px; font-weight: 600; font-family: inherit; background: var(--cobre); color: white; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
+        .cta-button:hover { background: var(--cobre-hover); transform: translateY(-2px); }
+        .cta-button:disabled { background: var(--cinza); cursor: not-allowed; transform: none; }
+
+        /* Form Footer - Padronizado */
+        .form-footer { display: flex; justify-content: center; gap: 24px; margin-top: 24px; font-size: 13px; color: var(--azul-petroleo); opacity: 0.6; flex-wrap: wrap; }
+        .form-footer-item { display: flex; align-items: center; gap: 6px; }
+        .form-footer-item svg { width: 16px; height: 16px; }
+
+        /* Mensagem de sucesso */
+        .form-success { display: none; text-align: center; padding: 32px; }
+        .form-success.show { display: block; }
+        .form-success-icon { width: 56px; height: 56px; background: var(--verde-oliva); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+        .form-success-icon svg { width: 28px; height: 28px; color: white; }
+        .form-success h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--azul-petroleo); margin-bottom: 8px; }
+        .form-success p { font-size: 14px; color: var(--cinza); }
+
+        /* ===== AUTOR SECTION ===== */
+        .autor { background: var(--off-white); padding: 80px 24px; }
+        .autor-container { max-width: 800px; margin: 0 auto; display: flex; gap: 40px; align-items: center; }
+        .autor-avatar { width: 140px; height: 140px; border-radius: 50%; border: 4px solid var(--cobre); flex-shrink: 0; overflow: hidden; }
+        .autor-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .autor-info h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--azul-petroleo); margin-bottom: 8px; }
+        .autor-info .cargo { font-size: 14px; color: var(--cobre); font-weight: 600; margin-bottom: 16px; }
+        .autor-info p { font-size: 15px; color: var(--azul-petroleo); opacity: 0.8; line-height: 1.7; }
+
+        /* ===== FOOTER ===== */
+        footer { background: var(--azul-escuro); padding: 40px 24px; text-align: center; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 20px; color: white; margin-bottom: 12px; }
+        .footer-logo span { color: var(--cobre); }
+        footer p { font-size: 13px; color: rgba(255, 255, 255, 0.5); }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 900px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; padding: 100px 24px 60px; }
+            .hero-content { order: 1; }
+            .hero-visual { order: 0; margin-bottom: 20px; }
+            .ebook-mockup { transform: none; }
+            .ebook-cover { max-width: 250px; margin: 0 auto; display: block; }
+            .hero-subheadline { margin-left: auto; margin-right: auto; }
+            .passos-grid { grid-template-columns: 1fr; }
+            .transformacao-grid { grid-template-columns: 1fr; gap: 24px; }
+            .transformacao-seta { transform: rotate(90deg); }
+            .autor-container { flex-direction: column; text-align: center; }
+            .form-footer { flex-direction: column; align-items: center; gap: 12px; }
+        }
+        @media (max-width: 600px) {
+            .hero-headline { font-size: 28px; }
+            .section-title { font-size: 26px; }
+            .problema-highlight { padding: 24px; }
+            .cta-box { padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Guia Prático Gratuito</span>
+                <h1 class="hero-headline">A Jornada que Faz o Aluno <em>Continuar</em></h1>
+                <p class="hero-subheadline">8 passos práticos para seus alunos continuarem — e chegarem até o fim do seu curso online.</p>
+                
+                <div class="hero-promise">
+                    <p>Se você ajustar a <strong>jornada do aluno</strong>, ele para de abandonar seu curso — <strong>mesmo sem mudar o conteúdo.</strong></p>
+                </div>
+
+                <a href="#baixar" class="hero-cta">
+                    Baixar o Guia Gratuito
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="ebook-mockup">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='450' viewBox='0 0 320 450'%3E%3Crect fill='%23223C50' width='320' height='450' rx='8'/%3E%3Crect fill='%23B87333' x='30' y='30' width='80' height='6' rx='3'/%3E%3Ctext fill='%23B87333' font-family='Georgia' font-size='12' x='30' y='70'%3EGAMIFICAÇÃO DA JORNADA DO ALUNO%3C/text%3E%3Ctext fill='white' font-family='Georgia' font-size='28' x='30' y='120'%3EA Jornada que%3C/text%3E%3Ctext fill='%23B87333' font-family='Georgia' font-size='28' x='30' y='155'%3EFaz o Aluno%3C/text%3E%3Ctext fill='%23B87333' font-family='Georgia' font-size='28' x='30' y='190'%3EContinuar%3C/text%3E%3Ccircle fill='%235F7E4B' cx='55' cy='280' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='51' y='285'%3E1%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='115' cy='280' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='111' y='285'%3E2%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='175' cy='280' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='171' y='285'%3E3%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='235' cy='280' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='231' y='285'%3E4%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='55' cy='350' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='51' y='355'%3E5%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='115' cy='350' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='111' y='355'%3E6%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='175' cy='350' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='171' y='355'%3E7%3C/text%3E%3Ccircle fill='%23223C50' stroke='%235F7E4B' cx='235' cy='350' r='22'/%3E%3Ctext fill='white' font-family='Georgia' font-size='14' x='231' y='355'%3E8%3C/text%3E%3Ctext fill='rgba(255,255,255,0.6)' font-family='Arial' font-size='10' x='30' y='420'%3ERAFAELA VILELA%3C/text%3E%3Ctext fill='%23B87333' font-family='Georgia' font-size='14' x='220' y='420'%3EGAME-ON%3C/text%3E%3C/svg%3E" alt="Ebook 8 Passos" class="ebook-cover">
+                    <span class="ebook-badge">Gratuito</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="problema">
+        <div class="problema-container">
+            <span class="section-tag">O Problema</span>
+            <h2 class="section-title">A maioria dos cursos não falha por falta de conhecimento</h2>
+            
+            <p class="problema-text">Você cria curso após curso, investe em tráfego... mas seus alunos somem depois de algumas semanas. A maioria começa empolgada — e desaparece antes da metade.</p>
+            
+            <p class="problema-text">O conteúdo é bom. A entrega é profissional. Mas algo não está funcionando.</p>
+
+            <div class="problema-highlight">
+                <p>O problema não é o que você ensina.</p>
+                <p><strong>O problema é que o aluno não sabe como continuar.</strong></p>
+                <p>Ele não vê progresso, não sente que está avançando, não tem clareza do caminho — e por isso desiste. Mesmo satisfeito com o conteúdo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 PASSOS -->
+    <section class="passos">
+        <div class="passos-container">
+            <div class="passos-header">
+                <span class="section-tag">O Guia</span>
+                <h2 class="section-title">8 passos para criar uma jornada que faz o aluno ficar</h2>
+            </div>
+
+            <div class="passos-grid">
+                <div class="passo-card">
+                    <div class="passo-numero">1</div>
+                    <div class="passo-content">
+                        <h3>Onboarding Memorável</h3>
+                        <p>Como transformar o primeiro acesso em conexão imediata</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">2</div>
+                    <div class="passo-content">
+                        <h3>Microvitórias Rápidas</h3>
+                        <p>Por que pequenas conquistas fazem o aluno continuar</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">3</div>
+                    <div class="passo-content">
+                        <h3>Objetivos Claros</h3>
+                        <p>Como dar direção para o aluno não se perder</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">4</div>
+                    <div class="passo-content">
+                        <h3>Desafios Progressivos</h3>
+                        <p>O equilíbrio entre desafio e frustração</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">5</div>
+                    <div class="passo-content">
+                        <h3>Feedback Constante</h3>
+                        <p>Por que o silêncio faz o aluno desistir</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">6</div>
+                    <div class="passo-content">
+                        <h3>Progresso Visível</h3>
+                        <p>Como tornar a evolução impossível de ignorar</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">7</div>
+                    <div class="passo-content">
+                        <h3>Senso de Pertencimento</h3>
+                        <p>Por que alunos não abandonam comunidades</p>
+                    </div>
+                </div>
+
+                <div class="passo-card">
+                    <div class="passo-numero">8</div>
+                    <div class="passo-content">
+                        <h3>Transformação Real</h3>
+                        <p>Quando o aluno deixa de consumir e vira fã</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSFORMAÇÃO -->
+    <section class="transformacao">
+        <div class="transformacao-container">
+            <div class="transformacao-header">
+                <span class="section-tag" style="color: var(--cobre);">A Mudança</span>
+                <h2 class="section-title">O que muda quando você ajusta a jornada</h2>
+            </div>
+
+            <div class="transformacao-grid">
+                <div class="transformacao-col">
+                    <div class="transformacao-label">Antes</div>
+                    <div class="transformacao-items">
+                        <div class="transformacao-item">Alunos somem após o módulo 2</div>
+                        <div class="transformacao-item">Poucos depoimentos espontâneos</div>
+                        <div class="transformacao-item">Taxa de conclusão baixa</div>
+                        <div class="transformacao-item">Recompra quase inexistente</div>
+                    </div>
+                </div>
+
+                <div class="transformacao-seta">→</div>
+
+                <div class="transformacao-col">
+                    <div class="transformacao-label">Depois</div>
+                    <div class="transformacao-items">
+                        <div class="transformacao-item destaque">Alunos engajados até o final</div>
+                        <div class="transformacao-item destaque">Depoimentos que vêm sozinhos</div>
+                        <div class="transformacao-item destaque">Conclusão que gera transformação</div>
+                        <div class="transformacao-item destaque">Alunos que compram de novo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / FORMULÁRIO -->
+    <section class="cta-section" id="baixar">
+        <div class="cta-container">
+            <span class="section-tag">Baixe Agora</span>
+            <h2 class="section-title">Receba o guia gratuito no seu email</h2>
+            <p class="cta-subtitle">8 passos práticos para aplicar ainda esta semana</p>
+
+            <div class="cta-box">
+                <form id="leadForm" class="cta-form">
+                    
+                    <!-- Pergunta Você é: -->
+                    <label class="form-label">Você é:</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="perfil_atual" value="curso_ativo" required>
+                            <span>Já tenho mentoria/curso online ativo</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="perfil_atual" value="primeira_mentoria">
+                            <span>Criando minha primeira mentoria/curso</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="perfil_atual" value="planejando_lancar">
+                            <span>Planejando lançar algo em breve</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="perfil_atual" value="pesquisando_gamificacao">
+                            <span>Pesquisando sobre gamificação</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="perfil_atual" value="agencia_infoprodutor">
+                            <span>Trabalho com infoprodutores / agência</span>
+                        </label>
+                    </div>
+
+                    <input type="text" name="nome" class="cta-input" placeholder="Seu nome" required>
+                    <input type="email" name="email" class="cta-input" placeholder="Seu melhor email" required>
+                    
+                    <!-- Campos ocultos -->
+                    <input type="hidden" name="origem" value="8_passos">
+                    <input type="hidden" name="utm_source" id="utm_source">
+                    <input type="hidden" name="utm_medium" id="utm_medium">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign">
+                    <input type="hidden" name="utm_content" id="utm_content">
+                    
+                    <button type="submit" class="cta-button" id="submitBtn">Quero Receber o Guia Gratuito</button>
+                </form>
+
+                <!-- Rodapé do Form - Padronizado -->
+                <div class="form-footer">
+                    <div class="form-footer-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span>100% gratuito</span>
+                    </div>
+                    <div class="form-footer-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        <span>Seus dados estão seguros</span>
+                    </div>
+                    <div class="form-footer-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                        <span>Sem spam</span>
+                    </div>
+                </div>
+
+                <!-- Mensagem de Sucesso -->
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <h3>Pronto! Verifique seu email 📧</h3>
+                    <p>O guia está a caminho. Confira sua caixa de entrada (e o spam, por precaução).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTOR -->
+    <section class="autor">
+        <div class="autor-container">
+            <div class="autor-avatar">
+                <img src="https://global-files-nginx.builderall.com/0d892035-0d58-4e43-84dc-deabaeba2a47/28ea2fa0aab45f1d674320d9b22f37aef042b17bc6833119bf2dab10468dddfa.png" alt="Rafaela Vilela">
+            </div>
+            <div class="autor-info">
+                <h3>Rafaela Vilela</h3>
+                <p class="cargo">Criadora do Método GAME-ON®</p>
+                <p>Especialista em gamificação da jornada do aluno. Ajuda criadores de cursos online a transformar experiências que vendem em experiências que transformam — gerando alunos que completam, recomendam e compram de novo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">GAME-<span>ON</span>®</div>
+        <p>© 2025 Rafaela Vilela · Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // ===== CONFIGURAÇÃO =====
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwq_uz1GgU5vaVa82jqIDpDMxkAYLHt172-Pfnrk8oKwOf1H9xOni4nQhQJKbwMP8Ba/exec';
+        
+        // ===== CAPTURA UTMs =====
+        function getUTMs() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                utm_source: params.get('utm_source') || '',
+                utm_medium: params.get('utm_medium') || '',
+                utm_campaign: params.get('utm_campaign') || '',
+                utm_content: params.get('utm_content') || ''
+            };
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const utms = getUTMs();
+            document.getElementById('utm_source').value = utms.utm_source;
+            document.getElementById('utm_medium').value = utms.utm_medium;
+            document.getElementById('utm_campaign').value = utms.utm_campaign;
+            document.getElementById('utm_content').value = utms.utm_content;
+        });
+        
+        // ===== RADIO BUTTONS =====
+        const radioOptions = document.querySelectorAll('.radio-option');
+        radioOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                radioOptions.forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+        
+        // ===== SUBMIT DO FORMULÁRIO =====
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            const form = this;
+            const formSuccess = document.getElementById('formSuccess');
+            
+            btn.disabled = true;
+            btn.textContent = 'Enviando...';
+            
+            const formData = new FormData(form);
+            const data = {
+                tipo: 'lead',
+                nome: formData.get('nome'),
+                email: formData.get('email'),
+                perfil_atual: formData.get('perfil_atual'),
+                origem: formData.get('origem'),
+                utm_source: formData.get('utm_source'),
+                utm_medium: formData.get('utm_medium'),
+                utm_campaign: formData.get('utm_campaign'),
+                utm_content: formData.get('utm_content')
+            };
+            
+            try {
+                await fetch(APPS_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                form.style.display = 'none';
+                document.querySelector('.form-footer').style.display = 'none';
+                formSuccess.classList.add('show');
+                
+                // Meta Pixel - Lead
+                fbq('track', 'Lead', {
+                    content_name: 'ebook_8_passos',
+                    content_category: 'ebook'
+                });
+                
+                // GA4 - Lead
+                gtag('event', 'generate_lead', {
+                    event_category: 'formulario',
+                    event_label: 'ebook_8_passos'
+                });
+                
+            } catch (error) {
+                console.error('Erro:', error);
+                btn.disabled = false;
+                btn.textContent = 'Quero Receber o Guia Gratuito';
+                alert('Ocorreu um erro. Por favor, tente novamente.');
+            }
+        });
+    </script>
+
+</body>
+</html>
